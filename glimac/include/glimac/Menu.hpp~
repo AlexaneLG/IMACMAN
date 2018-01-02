@@ -1,0 +1,31 @@
+#pragma once
+
+class Menu
+{
+  //attributes
+  int width, height, x, y;
+  
+  //construct & destruct
+  Menu();
+  virtual ~Menu();
+  
+  //getters & setters
+  int get_width();
+  int get_height();
+  int get_x();
+  int get_y();
+
+  void set_width(int new_width);
+  void set_height(int new_height);
+  void set_x(int new_x);
+  void set_y(int new_y);
+  
+  //other methodes
+  void display();
+  void create_game();
+  void load_game();
+  void update();
+  
+  void rage_quit();
+  void click_here();
+};
