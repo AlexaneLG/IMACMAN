@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/TP3_dessin_sphere.dir/dessin_sphere.cpp.o  -o TP3_dessin_sphere -rdynamic -lmingw32 -lglew32s ../glimac/libglimac.a -lSDL -lopengl32 -lglu32 -lfreeglut 
