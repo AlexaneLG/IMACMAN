@@ -21,7 +21,7 @@ void Sphere::build(GLfloat r, GLsizei discLat, GLsizei discLong) {
     // y(r, i, j) = r * sin(-PI / 2 + j * dTheta)
     // z(r, i, j) = r * cos(i * dPhi) * cos(-PI / 2 + j * dTheta)
 
-    GLfloat rcpLat = 1.f / (float)discLat, rcpLong = 1.f / (float)discLong;
+    GLfloat rcpLat = 1.f / discLat, rcpLong = 1.f / discLong;
     GLfloat dPhi = 2 * glm::pi<float>() * rcpLat, dTheta = glm::pi<float>() * rcpLong;
     
     std::vector<ShapeVertex> data;

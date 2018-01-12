@@ -12,7 +12,7 @@
 #include <unistd.h>
 #include <string>
 #include <glimac/TrackballCamera.hpp>
-// NANIIIII
+//bevo zivpio
 using namespace glimac;
 
 int main(int argc, char** argv) {

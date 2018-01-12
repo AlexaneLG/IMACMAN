@@ -10,10 +10,13 @@ find_package(SDL REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 
+# Pour gérer un bug a la fac, a supprimer sur machine perso:
+set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
+
 include_directories(${SDL_INCLUDE_DIR} ${OPENGL_INCLUDE_DIR} ${GLEW_INCLUDE_DIR} glimac/include third-party/include)
 
-#set(ALL_LIBRARIES glimac ${SDL_LIBRARY} ${OPENGL_LIBRARIES} ${GLEW_LIBRARY} glu32 freeglut)
-set(ALL_LIBRARIES mingw32 glew32s glimac SDL opengl32 glu32 freeglut) #add the libraries options in the LIB_LIST variable
+set(ALL_LIBRARIES glimac ${SDL_LIBRARY} ${OPENGL_LIBRARIES} ${GLEW_LIBRARY})
+
 add_subdirectory(glimac)
 
 file(GLOB TP_DIRECTORIES "TP*")
@@ -21,4 +24,3 @@ file(GLOB TP_DIRECTORIES "TP*")
 foreach(TP ${TP_DIRECTORIES})
     add_subdirectory(${TP})
 endforeach()
-

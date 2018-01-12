@@ -1,4 +1,3 @@
-#define GLEW_STATIC
 #include "glimac/Program.hpp"
 #include <stdexcept>
 

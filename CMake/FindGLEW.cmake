@@ -30,7 +30,7 @@ ELSE (WIN32)
 		NAMES GLEW glew
 		PATHS
 		/usr/lib64
-		/usr/lib
+		/usr/lib/nvidia-384/
 		/usr/local/lib64
 		/usr/local/lib
 		/sw/lib
